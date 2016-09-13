@@ -14,6 +14,14 @@
 		1E15D2811D7E68CD00295A9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E15D2801D7E68CD00295A9C /* Assets.xcassets */; };
 		1E15D2841D7E68CD00295A9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E15D2821D7E68CD00295A9C /* LaunchScreen.storyboard */; };
 		1E2AEDF21D82AFD200F980CF /* CKTableViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2AEDF11D82AFD200F980CF /* CKTableViewAdapter.m */; };
+		1E3DDB621D87DD6A00A7CF74 /* FQHTTPRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3DDB5C1D87DD6A00A7CF74 /* FQHTTPRequestManager.m */; };
+		1E3DDB631D87DD6A00A7CF74 /* FQRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3DDB5E1D87DD6A00A7CF74 /* FQRequestHandler.m */; };
+		1E3DDB641D87DD6A00A7CF74 /* FQURLFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3DDB611D87DD6A00A7CF74 /* FQURLFactory.m */; };
+		1E3DDB671D87DD9800A7CF74 /* FQRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3DDB661D87DD9800A7CF74 /* FQRequestModel.m */; };
+		1E3DDB6A1D87E10300A7CF74 /* FQErrorResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3DDB691D87E10300A7CF74 /* FQErrorResponseModel.m */; };
+		1E3DDB6D1D87E14900A7CF74 /* FQResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3DDB6C1D87E14900A7CF74 /* FQResponseModel.m */; };
+		1E3DDB741D87E2AD00A7CF74 /* FQApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3DDB701D87E2AD00A7CF74 /* FQApplication.m */; };
+		1E3DDB751D87E2AD00A7CF74 /* FQPathGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3DDB721D87E2AD00A7CF74 /* FQPathGetter.m */; };
 		1EF2AFCE1D7E82BE0016746C /* ViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF2AFCD1D7E82BE0016746C /* ViewUtils.m */; };
 		1EF2AFD21D7E9C160016746C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E15D27B1D7E68CD00295A9C /* ViewController.m */; };
 		1EF2AFD31D7E9C160016746C /* ViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF2AFCD1D7E82BE0016746C /* ViewUtils.m */; };
@@ -65,6 +73,24 @@
 		1E15D2A71D7E707000295A9C /* FQ_Prefix_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FQ_Prefix_Header.h; sourceTree = "<group>"; };
 		1E2AEDF01D82AFD200F980CF /* CKTableViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTableViewAdapter.h; sourceTree = "<group>"; };
 		1E2AEDF11D82AFD200F980CF /* CKTableViewAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKTableViewAdapter.m; sourceTree = "<group>"; };
+		1E3DDB5B1D87DD6A00A7CF74 /* FQHTTPRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQHTTPRequestManager.h; sourceTree = "<group>"; };
+		1E3DDB5C1D87DD6A00A7CF74 /* FQHTTPRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQHTTPRequestManager.m; sourceTree = "<group>"; };
+		1E3DDB5D1D87DD6A00A7CF74 /* FQRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQRequestHandler.h; sourceTree = "<group>"; };
+		1E3DDB5E1D87DD6A00A7CF74 /* FQRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQRequestHandler.m; sourceTree = "<group>"; };
+		1E3DDB5F1D87DD6A00A7CF74 /* FQRequestHandlerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQRequestHandlerProtocol.h; sourceTree = "<group>"; };
+		1E3DDB601D87DD6A00A7CF74 /* FQURLFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQURLFactory.h; sourceTree = "<group>"; };
+		1E3DDB611D87DD6A00A7CF74 /* FQURLFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQURLFactory.m; sourceTree = "<group>"; };
+		1E3DDB651D87DD9800A7CF74 /* FQRequestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQRequestModel.h; sourceTree = "<group>"; };
+		1E3DDB661D87DD9800A7CF74 /* FQRequestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQRequestModel.m; sourceTree = "<group>"; };
+		1E3DDB681D87E10300A7CF74 /* FQErrorResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQErrorResponseModel.h; sourceTree = "<group>"; };
+		1E3DDB691D87E10300A7CF74 /* FQErrorResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQErrorResponseModel.m; sourceTree = "<group>"; };
+		1E3DDB6B1D87E14900A7CF74 /* FQResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQResponseModel.h; sourceTree = "<group>"; };
+		1E3DDB6C1D87E14900A7CF74 /* FQResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQResponseModel.m; sourceTree = "<group>"; };
+		1E3DDB6F1D87E2AD00A7CF74 /* FQApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQApplication.h; sourceTree = "<group>"; };
+		1E3DDB701D87E2AD00A7CF74 /* FQApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQApplication.m; sourceTree = "<group>"; };
+		1E3DDB711D87E2AD00A7CF74 /* FQPathGetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQPathGetter.h; sourceTree = "<group>"; };
+		1E3DDB721D87E2AD00A7CF74 /* FQPathGetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQPathGetter.m; sourceTree = "<group>"; };
+		1E3DDB731D87E2AD00A7CF74 /* CWLSynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWLSynthesizeSingleton.h; sourceTree = "<group>"; };
 		1EF2AFCC1D7E82BE0016746C /* ViewUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewUtils.h; sourceTree = "<group>"; };
 		1EF2AFCD1D7E82BE0016746C /* ViewUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewUtils.m; sourceTree = "<group>"; };
 		1EF2AFE21D7E9C160016746C /* FQ_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FQ_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +189,7 @@
 				1E15D2801D7E68CD00295A9C /* Assets.xcassets */,
 				1E15D2821D7E68CD00295A9C /* LaunchScreen.storyboard */,
 				1E15D2851D7E68CD00295A9C /* Info.plist */,
+				1E3DDB6E1D87E29E00A7CF74 /* common */,
 				1E3DDB581D87B11E00A7CF74 /* net */,
 				1EFD29471D8129B7000875CD /* model */,
 				1E15D2741D7E68CD00295A9C /* Supporting Files */,
@@ -185,8 +212,33 @@
 		1E3DDB581D87B11E00A7CF74 /* net */ = {
 			isa = PBXGroup;
 			children = (
+				1E3DDB681D87E10300A7CF74 /* FQErrorResponseModel.h */,
+				1E3DDB691D87E10300A7CF74 /* FQErrorResponseModel.m */,
+				1E3DDB651D87DD9800A7CF74 /* FQRequestModel.h */,
+				1E3DDB661D87DD9800A7CF74 /* FQRequestModel.m */,
+				1E3DDB5B1D87DD6A00A7CF74 /* FQHTTPRequestManager.h */,
+				1E3DDB5C1D87DD6A00A7CF74 /* FQHTTPRequestManager.m */,
+				1E3DDB5D1D87DD6A00A7CF74 /* FQRequestHandler.h */,
+				1E3DDB5E1D87DD6A00A7CF74 /* FQRequestHandler.m */,
+				1E3DDB5F1D87DD6A00A7CF74 /* FQRequestHandlerProtocol.h */,
+				1E3DDB601D87DD6A00A7CF74 /* FQURLFactory.h */,
+				1E3DDB611D87DD6A00A7CF74 /* FQURLFactory.m */,
+				1E3DDB6B1D87E14900A7CF74 /* FQResponseModel.h */,
+				1E3DDB6C1D87E14900A7CF74 /* FQResponseModel.m */,
 			);
 			path = net;
+			sourceTree = "<group>";
+		};
+		1E3DDB6E1D87E29E00A7CF74 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				1E3DDB6F1D87E2AD00A7CF74 /* FQApplication.h */,
+				1E3DDB701D87E2AD00A7CF74 /* FQApplication.m */,
+				1E3DDB711D87E2AD00A7CF74 /* FQPathGetter.h */,
+				1E3DDB721D87E2AD00A7CF74 /* FQPathGetter.m */,
+				1E3DDB731D87E2AD00A7CF74 /* CWLSynthesizeSingleton.h */,
+			);
+			path = common;
 			sourceTree = "<group>";
 		};
 		1EFD29471D8129B7000875CD /* model */ = {
@@ -474,16 +526,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EFD29531D81621D000875CD /* FQTestController.m in Sources */,
+				1E3DDB751D87E2AD00A7CF74 /* FQPathGetter.m in Sources */,
 				1E15D27C1D7E68CD00295A9C /* ViewController.m in Sources */,
+				1E3DDB6D1D87E14900A7CF74 /* FQResponseModel.m in Sources */,
 				1EFD29431D8119C6000875CD /* UITableView+adapter.m in Sources */,
 				1EF2AFCE1D7E82BE0016746C /* ViewUtils.m in Sources */,
 				1EFD294D1D813075000875CD /* FQFirstAdapter.m in Sources */,
 				1EFD29501D8152CB000875CD /* NSObject+Instance.m in Sources */,
 				1E2AEDF21D82AFD200F980CF /* CKTableViewAdapter.m in Sources */,
+				1E3DDB741D87E2AD00A7CF74 /* FQApplication.m in Sources */,
 				1EFD29461D811B9A000875CD /* FQFirstViewController.m in Sources */,
 				1E15D2791D7E68CD00295A9C /* AppDelegate.m in Sources */,
+				1E3DDB6A1D87E10300A7CF74 /* FQErrorResponseModel.m in Sources */,
+				1E3DDB631D87DD6A00A7CF74 /* FQRequestHandler.m in Sources */,
+				1E3DDB641D87DD6A00A7CF74 /* FQURLFactory.m in Sources */,
 				1EFD29401D811529000875CD /* FQAdapter.m in Sources */,
+				1E3DDB671D87DD9800A7CF74 /* FQRequestModel.m in Sources */,
 				1E15D2761D7E68CD00295A9C /* main.m in Sources */,
+				1E3DDB621D87DD6A00A7CF74 /* FQHTTPRequestManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

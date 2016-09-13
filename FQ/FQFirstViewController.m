@@ -25,15 +25,13 @@
     tableV.tag = 100;
     [self.view addSubview:tableV];
     tableV.backgroundColor = [UIColor yellowColor];
-//    
-//    FQTestController * fqt = [FQTestController instance];
-//    tableV.dataSource = fqt;
-//    tableV.delegate = fqt;
 
     firstAdapter = [FQFirstAdapter instance];
-//    [firstAdapter setDidSelectedRow:^(UITableView *table, NSIndexPath *indexPath) {
-//        [self dismissViewControllerAnimated:YES completion:nil];
-//    }];
+    __weak FQFirstViewController *me = self;
+    [firstAdapter setDidCellSelected:^(UITableView *table, NSIndexPath *indexPath) {
+        [me getData];
+
+    }];
     [tableV setAdapter:firstAdapter];
     
     
@@ -41,7 +39,7 @@
 //    [tableV reloadData];
     
     NSLog(@"%@   %@",[tableV.delegate class],[tableV.dataSource class]);
-    NSLog(@"%ld",firstAdapter.aaaa);
+    NSLog(@"%ld",(long)firstAdapter.aaaa);
     
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     btn.frame = CGRectMake(0, 0, 100, 100);
@@ -57,6 +55,15 @@
 - (void)btn{
     UITableView *table = [self.view viewWithTag:100];
     [table reloadData];
+}
+
+- (void)getData{
+    FQRequestHandler *handler = [FQRequestHandler defaultHandler:[NSString class]];
+    [handler setDidFinished:^(FQHTTPRequestManager *manager, NSString *data) {
+        NSLog(@"%@",data);
+    }];
+    FQHTTPRequestManager *manager = [FQHTTPRequestManager manager:@"https://api.ufengqiu.com/Api/Document/position" handler:handler requestObject:nil];
+    [manager get];
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
