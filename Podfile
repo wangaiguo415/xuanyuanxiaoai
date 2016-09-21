@@ -6,3 +6,6 @@ pod 'MJExtension'
 pod 'SDWebImage'
 pod 'UITextView+Placeholder'
 pod 'TKRoundedView', '~> 0.5'
+pod 'Realm', '~> 0.96'
+pod 'SVPullToRefresh'
+
