@@ -9,9 +9,11 @@
 #import "FQFirstViewController.h"
 #import "FQFirstAdapter.h"
 #import "FQTestController.h"
+#import "FQSecondViewController.h"
 
 @interface FQFirstViewController (){
     FQFirstAdapter *firstAdapter;
+    FQSecondViewController *second;
 }
 
 @end
@@ -34,9 +36,10 @@
     }];
     [tableV setAdapter:firstAdapter];
     
-    
-    
-//    [tableV reloadData];
+    second = [FQSecondViewController instance];
+    [second setBBlock:^{
+        
+    }];
     
     NSLog(@"%@   %@",[tableV.delegate class],[tableV.dataSource class]);
     NSLog(@"%ld",(long)firstAdapter.aaaa);
@@ -48,13 +51,13 @@
     [self.view addSubview:btn];
     
     
-    NSString * bbb = NSLocalizedString(@"error_data", nil);
+    NSString * bbb = NSLocalizedString(@"error_data", btn);
     NSLog(@"%@",bbb);
     
 }
 - (void)btn{
-    UITableView *table = [self.view viewWithTag:100];
-    [table reloadData];
+    
+    [self presentViewController:second animated:YES completion:nil];
 }
 
 - (void)getData{

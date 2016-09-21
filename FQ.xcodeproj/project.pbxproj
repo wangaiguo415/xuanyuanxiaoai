@@ -22,6 +22,8 @@
 		1E3DDB6D1D87E14900A7CF74 /* FQResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3DDB6C1D87E14900A7CF74 /* FQResponseModel.m */; };
 		1E3DDB741D87E2AD00A7CF74 /* FQApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3DDB701D87E2AD00A7CF74 /* FQApplication.m */; };
 		1E3DDB751D87E2AD00A7CF74 /* FQPathGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3DDB721D87E2AD00A7CF74 /* FQPathGetter.m */; };
+		1EABC4A91D8E5D8300D0296D /* FQSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EABC4A81D8E5D8300D0296D /* FQSecondViewController.m */; };
+		1EAED9451D8E947100867F01 /* UIColor+Instance.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EAED9441D8E947100867F01 /* UIColor+Instance.m */; };
 		1EF2AFCE1D7E82BE0016746C /* ViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF2AFCD1D7E82BE0016746C /* ViewUtils.m */; };
 		1EF2AFD21D7E9C160016746C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E15D27B1D7E68CD00295A9C /* ViewController.m */; };
 		1EF2AFD31D7E9C160016746C /* ViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF2AFCD1D7E82BE0016746C /* ViewUtils.m */; };
@@ -91,6 +93,10 @@
 		1E3DDB711D87E2AD00A7CF74 /* FQPathGetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQPathGetter.h; sourceTree = "<group>"; };
 		1E3DDB721D87E2AD00A7CF74 /* FQPathGetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQPathGetter.m; sourceTree = "<group>"; };
 		1E3DDB731D87E2AD00A7CF74 /* CWLSynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWLSynthesizeSingleton.h; sourceTree = "<group>"; };
+		1EABC4A71D8E5D8300D0296D /* FQSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQSecondViewController.h; sourceTree = "<group>"; };
+		1EABC4A81D8E5D8300D0296D /* FQSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQSecondViewController.m; sourceTree = "<group>"; };
+		1EAED9431D8E947100867F01 /* UIColor+Instance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Instance.h"; sourceTree = "<group>"; };
+		1EAED9441D8E947100867F01 /* UIColor+Instance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Instance.m"; sourceTree = "<group>"; };
 		1EF2AFCC1D7E82BE0016746C /* ViewUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewUtils.h; sourceTree = "<group>"; };
 		1EF2AFCD1D7E82BE0016746C /* ViewUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewUtils.m; sourceTree = "<group>"; };
 		1EF2AFE21D7E9C160016746C /* FQ_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FQ_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,6 +203,8 @@
 				1EFD294C1D813075000875CD /* FQFirstAdapter.m */,
 				1EFD29511D81621D000875CD /* FQTestController.h */,
 				1EFD29521D81621D000875CD /* FQTestController.m */,
+				1EABC4A71D8E5D8300D0296D /* FQSecondViewController.h */,
+				1EABC4A81D8E5D8300D0296D /* FQSecondViewController.m */,
 			);
 			path = FQ;
 			sourceTree = "<group>";
@@ -244,6 +252,8 @@
 		1EFD29471D8129B7000875CD /* model */ = {
 			isa = PBXGroup;
 			children = (
+				1EAED9431D8E947100867F01 /* UIColor+Instance.h */,
+				1EAED9441D8E947100867F01 /* UIColor+Instance.m */,
 				1E2AEDF01D82AFD200F980CF /* CKTableViewAdapter.h */,
 				1E2AEDF11D82AFD200F980CF /* CKTableViewAdapter.m */,
 				1E15D2A71D7E707000295A9C /* FQ_Prefix_Header.h */,
@@ -353,7 +363,7 @@
 		1E15D2691D7E68CD00295A9C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = wangaiguo;
 				TargetAttributes = {
 					1E15D2701D7E68CD00295A9C = {
@@ -526,6 +536,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EFD29531D81621D000875CD /* FQTestController.m in Sources */,
+				1EABC4A91D8E5D8300D0296D /* FQSecondViewController.m in Sources */,
 				1E3DDB751D87E2AD00A7CF74 /* FQPathGetter.m in Sources */,
 				1E15D27C1D7E68CD00295A9C /* ViewController.m in Sources */,
 				1E3DDB6D1D87E14900A7CF74 /* FQResponseModel.m in Sources */,
@@ -538,6 +549,7 @@
 				1EFD29461D811B9A000875CD /* FQFirstViewController.m in Sources */,
 				1E15D2791D7E68CD00295A9C /* AppDelegate.m in Sources */,
 				1E3DDB6A1D87E10300A7CF74 /* FQErrorResponseModel.m in Sources */,
+				1EAED9451D8E947100867F01 /* UIColor+Instance.m in Sources */,
 				1E3DDB631D87DD6A00A7CF74 /* FQRequestHandler.m in Sources */,
 				1E3DDB641D87DD6A00A7CF74 /* FQURLFactory.m in Sources */,
 				1EFD29401D811529000875CD /* FQAdapter.m in Sources */,
@@ -620,11 +632,14 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: 爱国 王 (BMBRT49S3V)";
+				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -643,9 +658,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -664,11 +680,14 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: 爱国 王 (BMBRT49S3V)";
+				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -681,8 +700,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -694,15 +714,18 @@
 			baseConfigurationReference = 76685F87EFCA175D2012F5E9 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wang Ming (RNPFEU4BVR)";
 				GCC_PREFIX_HEADER = FQ/FQ_Prefix_Header.h;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
 				);
 				INFOPLIST_FILE = FQ/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FQ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -711,15 +734,18 @@
 			baseConfigurationReference = D40662D0C9EDBEAE36664E60 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wang Ming (RNPFEU4BVR)";
 				GCC_PREFIX_HEADER = FQ/FQ_Prefix_Header.h;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
 				);
 				INFOPLIST_FILE = FQ/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FQ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -781,6 +807,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FQ.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -794,6 +821,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FQ.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

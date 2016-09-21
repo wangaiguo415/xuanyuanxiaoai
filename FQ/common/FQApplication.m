@@ -27,33 +27,27 @@ CWL_SYNTHESIZE_SINGLETON_FOR_CLASS_WITH_ACCESSOR(FQApplication,currentApplicatio
 {
     return [[[UIApplication sharedApplication] delegate] window];
 }
-//导航栏高度
 - (float)topHeight
 {
     return 64;
 }
-//屏幕大小
 - (CGRect)screenBounds
 {
     CGRect bounds = [[UIScreen mainScreen] bounds];
     return bounds;
 }
-//设备的分辨率
 - (float)screenScale
 {
     return [[UIScreen mainScreen] scale];
 }
-//屏幕的宽度
 - (float)screenWidth
 {
     return [self screenBounds].size.width;
 }
-//屏幕的高度
 - (float)screenHeight
 {
     return [self screenBounds].size.height;
 }
-//当前系统的版本
 - (int)systemVersion
 {
     return [[[UIDevice currentDevice] systemVersion] intValue];

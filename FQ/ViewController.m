@@ -19,7 +19,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor cyanColor];
     
-    [self mbprogressHUD];
+    [self performSelector:@selector(mbprogressHUD) withObject:nil afterDelay:4];
     [self makeButton];
     
      NSLog(@"%@",[self debugOrRelease]);
@@ -28,7 +28,9 @@
 //mbprogressHUD
 - (void)mbprogressHUD{
     UIView *view = [[UIApplication sharedApplication].windows lastObject];
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    //因为windows会先加载出来 所以得延迟一下才能看出效果
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
+    MAIN_WINDOW;
     hud.labelText = @"第一次弄这些";
     hud.mode = MBProgressHUDModeCustomView;
     hud.removeFromSuperViewOnHide = YES;
@@ -38,6 +40,7 @@
         NSLog(@"1234567890987654321");
     }
     NSLog(@"%@",[view class]);
+    NSLog(@"%ld",(unsigned long)[UIApplication sharedApplication].windows.count);
    
 }
 - (void)makeButton{
@@ -48,7 +51,7 @@
     
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     [btn setLeft:100 right:300];
-    [btn setTop:100 bottom:300];
+    [btn setTop:110 bottom:300];
     btn.backgroundColor = [UIColor redColor];
     [self.view addSubview:btn];
     [btn setTitle:@"O(∩_∩)O哈哈哈~" forState:UIControlStateNormal];

@@ -19,5 +19,6 @@
 #import "FQHTTPRequestManager.h"
 #import "FQRequestHandler.h"
 #import "FQURLFactory.h"
+#import "UIColor+Instance.h"
 
 #endif /* FQ_Prefix_Header_h */
