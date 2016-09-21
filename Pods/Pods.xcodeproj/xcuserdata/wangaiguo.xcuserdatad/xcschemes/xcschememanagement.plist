@@ -19,12 +19,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>ObjectiveSugar.xcscheme</key>
+		<key>Pods-FQ.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-FQ.xcscheme</key>
+		<key>Realm.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -44,15 +44,20 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>UITextView+Placeholder.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>089A452742CEE831A6E8E36A56824115</key>
+		<key>023F027792E4E8F298A0E9C1953F2338</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>352137B5806A624A111A6296609D401E</key>
+		<key>06B7FB27853B73F18F3D8ECDFDDB5A2A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +67,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>65CF0A46A780EEA87BA56CBB16A08D01</key>
+		<key>5DE80B423B21BACFC52CC8C007F74887</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8390B21E050D556E2E969AE89C8C4ACC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,12 +82,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E56801125422C183C758D713082AF9BD</key>
+		<key>B52899E44DBF2B2A33657D04C29CB866</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FB02252E940D263E5302FD30EA16EA18</key>
+		<key>C420298089A9B5E365FED3B41E2BE78E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -22,31 +22,36 @@ PODS:
     - AFNetworking/NSURLSession
   - MBProgressHUD (0.9.2)
   - MJExtension (3.0.10)
-  - ObjectiveSugar (1.1.0)
+  - Realm (0.97.1):
+    - Realm/Headers (= 0.97.1)
+  - Realm/Headers (0.97.1)
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
   - SVPullToRefresh (0.4.1)
   - TKRoundedView (0.5)
+  - UITextView+Placeholder (1.1.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.6.3)
   - MBProgressHUD (~> 0.9.1)
   - MJExtension
-  - ObjectiveSugar
+  - Realm (~> 0.96)
   - SDWebImage
   - SVPullToRefresh
   - TKRoundedView (~> 0.5)
+  - UITextView+Placeholder
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
-  ObjectiveSugar: a6a25f23d657c19df0a0b972466d5b5ca9f5295c
+  Realm: 6854f49cc788171573a0605fe5e55d3224bc39f9
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
   TKRoundedView: 0886ec88ad9d8f9c1de7503babecfacc06263920
+  UITextView+Placeholder: a6fc3e0378f3870036ec562a7537cbf6dbae4bf6
 
-PODFILE CHECKSUM: 581cbdb7d37b1e104f1f22b3b502ca85f1458cd3
+PODFILE CHECKSUM: b61ea3e6a800da877d564c8dab75d76b3364c11c
 
 COCOAPODS: 1.1.0.beta.2
