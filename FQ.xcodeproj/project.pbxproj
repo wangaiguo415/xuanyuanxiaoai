@@ -38,6 +38,7 @@
 		1EFD294D1D813075000875CD /* FQFirstAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFD294C1D813075000875CD /* FQFirstAdapter.m */; };
 		1EFD29501D8152CB000875CD /* NSObject+Instance.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFD294F1D8152CB000875CD /* NSObject+Instance.m */; };
 		1EFD29531D81621D000875CD /* FQTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFD29521D81621D000875CD /* FQTestController.m */; };
+		5714348C0DDC120C24D75566 /* libPods-FQ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB392E324BD1CC94BE3279F5 /* libPods-FQ.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0947C6608F3F3499469516CF /* Pods-FQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FQ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FQ/Pods-FQ.debug.xcconfig"; sourceTree = "<group>"; };
 		1E15D2711D7E68CD00295A9C /* FQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E15D2751D7E68CD00295A9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1E15D2771D7E68CD00295A9C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -111,6 +113,8 @@
 		1EFD294F1D8152CB000875CD /* NSObject+Instance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Instance.m"; sourceTree = "<group>"; };
 		1EFD29511D81621D000875CD /* FQTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQTestController.h; sourceTree = "<group>"; };
 		1EFD29521D81621D000875CD /* FQTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQTestController.m; sourceTree = "<group>"; };
+		619C75E6BD6D385BE9B939E3 /* Pods-FQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FQ.release.xcconfig"; path = "Pods/Target Support Files/Pods-FQ/Pods-FQ.release.xcconfig"; sourceTree = "<group>"; };
+		EB392E324BD1CC94BE3279F5 /* libPods-FQ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FQ.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5714348C0DDC120C24D75566 /* libPods-FQ.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +156,8 @@
 				1E15D2731D7E68CD00295A9C /* FQ */,
 				1E15D2721D7E68CD00295A9C /* Products */,
 				1EF2AFE31D7E9C160016746C /* FQ copy-Info.plist */,
+				4248999450121EB15AF4401B /* Pods */,
+				32D2D7BDDD10AB652AA390C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -252,6 +259,23 @@
 			name = model;
 			sourceTree = "<group>";
 		};
+		32D2D7BDDD10AB652AA390C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB392E324BD1CC94BE3279F5 /* libPods-FQ.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4248999450121EB15AF4401B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0947C6608F3F3499469516CF /* Pods-FQ.debug.xcconfig */,
+				619C75E6BD6D385BE9B939E3 /* Pods-FQ.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -259,9 +283,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1E15D29E1D7E68CD00295A9C /* Build configuration list for PBXNativeTarget "FQ" */;
 			buildPhases = (
+				59371F3FCA7F21DA2193724F /* [CP] Check Pods Manifest.lock */,
 				1E15D26D1D7E68CD00295A9C /* Sources */,
 				1E15D26E1D7E68CD00295A9C /* Frameworks */,
 				1E15D26F1D7E68CD00295A9C /* Resources */,
+				FC8462AA8D76DFE2ABB7C1F0 /* [CP] Embed Pods Frameworks */,
+				C026A3CD2A776336EA0F1967 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -404,6 +431,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		59371F3FCA7F21DA2193724F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C026A3CD2A776336EA0F1967 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FQ/Pods-FQ-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC8462AA8D76DFE2ABB7C1F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FQ/Pods-FQ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1E15D26D1D7E68CD00295A9C /* Sources */ = {
@@ -586,6 +661,7 @@
 		};
 		1E15D29F1D7E68CD00295A9C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0947C6608F3F3499469516CF /* Pods-FQ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Wang Ming (RNPFEU4BVR)";
@@ -605,6 +681,7 @@
 		};
 		1E15D2A01D7E68CD00295A9C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 619C75E6BD6D385BE9B939E3 /* Pods-FQ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Wang Ming (RNPFEU4BVR)";
