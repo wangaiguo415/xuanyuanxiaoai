@@ -1,0 +1,8 @@
+platform :ios, '7.0'
+pod 'AFNetworking', '~> 2.6.3'
+pod 'ObjectiveSugar'
+pod 'SDWebImage'
+pod 'MJExtension'
+pod 'SVPullToRefresh'
+pod 'MBProgressHUD', '~> 0.9.1'
+pod 'TKRoundedView', '~> 0.5'
